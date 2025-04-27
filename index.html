@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Tipbox</title>
+    <link rel="shortcut icon" href="/assets/img/tip-box.png" type="tip-box" />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bill Amount</h3>
+      <input type="number" id="bill" placeholder="$0.00" min="0" />
+      <h3>Tip Amount</h3>
+      <div class="tip-buttons">
+        <button onclick="setTip(5)">5%</button>
+        <button onclick="setTip(10)">10%</button>
+        <button onclick="setTip(15)">15%</button>
+        <input type="number" id="customTip" placeholder="Custom %" />
+      </div>
+      <div class="result">$<span id="total">0.00</span> total</div>
+    </div>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
